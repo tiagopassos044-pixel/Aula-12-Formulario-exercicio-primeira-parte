@@ -1,1 +1,93 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74B0FF, #9B9BFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ header {
+color: black;
+padding: 20px;
+text-align: center;
+ }
+ h1 {
+     display: flex;
+     text-align: left;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 20px;
+ }
+.form {
+    background-color: #fff;
+    text-align: center;
+    max-width: 400px;
+    padding: 70px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+}
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0984e3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="form">
+    <header>
+        <h1>cadastro</h1>
+    </header>
+ <form action="cadastro.html" method="get" autocomplete="on">
+
+    <label for="inome">Nome completo</label>
+    <input type="text" name="nome" id="inome" required minlength="8" maxlength="50" size="60" autocomplete="name"><br><br><br>
+
+    <label for="imail">E-mail</label>
+    <input type="email" name="Email" id="imail" required minlength="8" maxlength="50" size="60" autocomplete="Email"><br><br><br>
+
+    <label for="isenh">senha</label>
+    <input type="password" name="senha" id="isenh" required minlength="8" maxlength="30" size="60" autocomplete="senha"><br><br><br>
+
+    <button type="submit">Cadastrar </button><br><br>
+
+             Já possui uma conta?<a href="">Entrar</a>
+
+ </form>
+
+    </div>
+</body>
+</html>

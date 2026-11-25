@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Carros Elétricos</h1>
+    <form action="cadastro.html" method="post" autocomplete="on">
+
+      <label  for="inome">Nome completo:</label><br>
+      <input type="text" name="nome" id="inome" required minlength="8" maxlength="20" size="40" placeholder="Digite seu nome completo" autocomplete="name"><br><br>
+
+      <label for="imodelo">Modelo de carro elétrico favorito:</label><br>
+      <input type="text" name="modelo" id="imodelo" required minlength="8" maxlength="20" size="40" placeholder="Ex: Tesla Model 3" autocomplete="on"><br><br>
+
+      <label for="isen">Crie uma senha de acesso:</label><br>
+            <input type="password" name="senha" id="isen" required minlength="6" maxlength="20" size="23" placeholder="Mínimo 6 caracteres" autocomplete="new-password"><br><br>
+            <!-- current-password - senha atual -->
+            
+      <input type="submit" value="Enviar">
+      <input type="reset"  value="Limpar">
+
+    </form>
+</body>
+</html>
